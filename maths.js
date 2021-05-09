@@ -41,6 +41,6 @@ function checkAnswer()
     }
     else if(total_correct != 3)
     {
-        alert('Wrong.Please Check your again!!! You wrote ' + prediction1 + prediction2 + prediction3);
+        alert('NOT MATCHED. Please try again. You wrote ' + prediction1 + prediction2 + prediction3);
     }
 }
