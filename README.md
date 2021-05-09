@@ -1,6 +1,6 @@
 # Human Verification
 
-![Project Image](README_IMAGES\image8.gif)
+![Project Image](README_IMAGES\demo.gif)
 
 <br />
 
@@ -58,6 +58,7 @@ In this website, we ask the user to enter three random digits, and using Deep Le
 </p>
 
 #### [Back To The Top](#Human-Verification)
+
 ---
 
 ## Results
@@ -86,8 +87,8 @@ In this website, we ask the user to enter three random digits, and using Deep Le
 <img  src="README_IMAGES\Website_Test_Cases.png" width="250" > 
 </p>
 
-
 #### [Back To The Top](#Human-Verification)
+
 ---
 
 ## Project Layout
@@ -134,4 +135,3 @@ In this website, we ask the user to enter three random digits, and using Deep Le
 - LinkedIn - [Srinivas K](https://www.linkedin.com/in/srinivas-konduri/)
 
 #### [Back To The Top](#Human-Verification)
-
