@@ -1,6 +1,6 @@
 # Human Verification
 
-![Project Image](README_IMAGES\demo.gif)
+![Project Image](README_IMAGES/demo.gif)
 
 <br />
 
@@ -51,10 +51,10 @@ In this website, we ask the user to enter three random digits, and using Deep Le
 ## Neural Network
 
 <p align="center">
-  <img  src="README_IMAGES\NN.png" width="250" > 
+  <img  src="README_IMAGES\Final-Hyperparameters.png" width="250" > 
 </p>
 <p align="center">
-  <img  src="README_IMAGES\Final-Hyperparameters.png" width="250" > 
+  <img  src="README_IMAGES\NN.png" width="400" > 
 </p>
 
 #### [Back To The Top](#Human-Verification)
@@ -76,15 +76,14 @@ In this website, we ask the user to enter three random digits, and using Deep Le
   <img  src="README_IMAGES\Confusion_Matrix.png" width="250" > 
 </p>
 <p align="center">
-  <img  src="README_IMAGES\Result.png" width="250" > 
+  <img  src="README_IMAGES\Result.png" width="350" > 
 </p>
 
 <br>
-### Successful Test cases on Website.
+<h3>Below are the Successful Test cases on Website.</h3>
 <br >
-<br>
 <p align="center">
-<img  src="README_IMAGES\Website_Test_Cases.png" width="250" > 
+<img  src="README_IMAGES\Website_Test_Cases.png" width="300" > 
 </p>
 
 #### [Back To The Top](#Human-Verification)
