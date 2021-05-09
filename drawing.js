@@ -205,27 +205,27 @@ function prepareCanvas3() {
       isPainting3 = false;
     });
   
-    canvas.addEventListener("mouseleave", function (event) {
+    canvas3.addEventListener("mouseleave", function (event) {
       isPainting3 = false;
     });
   
     // Touch Events
-    canvas.addEventListener("touchstart", function (event) {
+    canvas3.addEventListener("touchstart", function (event) {
       // console.log('Touchdown!');
       isPainting3 = true;
       currentX3 = event.touches[0].clientX - canvas3.offsetLeft;
       currentY3 = event.touches[0].clientY - canvas3.offsetTop;
     });
   
-    canvas.addEventListener("touchend", function (event) {
+    canvas3.addEventListener("touchend", function (event) {
       isPainting3 = false;
     });
   
-    canvas.addEventListener("touchcancel", function (event) {
+    canvas3.addEventListener("touchcancel", function (event) {
       isPainting3 = false;
     });
   
-    canvas.addEventListener("touchmove", function (event) {
+    canvas3.addEventListener("touchmove", function (event) {
       if (isPainting) {
         previousX3 = currentX3;
         currentX3 = event.touches[0].clientX - canvas3.offsetLeft;
