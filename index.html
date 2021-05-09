@@ -3,7 +3,6 @@
 
 <head>
   <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
-  <!-- Custom font -->
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Just+Another+Hand&display=swap'>
 
 
@@ -12,10 +11,9 @@
   
   <script src='vendor/opencv.js'></script>
 
-  <!-- TODO: Add Javascript files here -->
-  <script src='drawing.js'></script>
-  <script src='processing.js'></script>
-  <script src='maths.js'></script>
+  <script src='canvas-drawing.js'></script>
+  <script src='predictor.js'></script>
+  <script src='validator.js'></script>
 
   
   <style>
@@ -49,14 +47,12 @@ background-repeat: no-repeat;
 background-size: cover;
 }
 
-/* TODO: Styling by html element: add styling for h1 and h2 */
 h1, h2 {
   font-weight: 400;
   font-size: 100px;
   color:white;
 }
 
-/* TODO: Styling by id: add styling for #title */
 #title {
   color: #FC8C93;
   line-height: 50px;
@@ -67,7 +63,6 @@ h1, h2 {
   color: #FFFFFF;
 }
 
-/* TODO: Styling by id: add styling for canvas */
 #my-canvas1,#my-canvas2,#my-canvas3 {
   vertical-align: top;
   display: inline;
@@ -98,7 +93,6 @@ h1, h2 {
 	text-decoration:none;
 }
 
-/* TODO: Styling by class: add Styling for button on hover */
 .btn:hover {
   background-color: yellow; 
   color: white;
@@ -128,7 +122,6 @@ h1, h2 {
   </div>
 
 
-  <!-- TODO: Set up TF model and drawing logic-->
    <script>
     
     loadModel();
