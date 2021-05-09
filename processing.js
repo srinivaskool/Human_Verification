@@ -5,7 +5,7 @@ async function loadModel() {
 }
 
 function predictImage1() {
-  let image = cv.imread(my - canvas1);
+  let image = cv.imread("my-canvas1");
   cv.cvtColor(image, image, cv.COLOR_RGBA2GRAY, 0);
   cv.threshold(image, image, 175, 255, cv.THRESH_BINARY);
 
@@ -111,7 +111,7 @@ function predictImage1() {
 }
 
 function predictImage2() {
-  let image = cv.imread(my - canvas2);
+  let image = cv.imread("my-canvas2");
   cv.cvtColor(image, image, cv.COLOR_RGBA2GRAY, 0);
   cv.threshold(image, image, 175, 255, cv.THRESH_BINARY);
 
@@ -217,7 +217,7 @@ function predictImage2() {
 }
 
 function predictImage3() {
-  let image = cv.imread(my - canvas3);
+  let image = cv.imread("my-canvas3");
   cv.cvtColor(image, image, cv.COLOR_RGBA2GRAY, 0);
   cv.threshold(image, image, 175, 255, cv.THRESH_BINARY);
 
