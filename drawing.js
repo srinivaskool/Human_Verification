@@ -64,27 +64,27 @@ function prepareCanvas1() {
     isPainting1 = false;
   });
 
-  canvas.addEventListener("mouseleave", function (event) {
+  canvas1.addEventListener("mouseleave", function (event) {
     isPainting1 = false;
   });
 
   // Touch Events
-  canvas.addEventListener("touchstart", function (event) {
+  canvas1.addEventListener("touchstart", function (event) {
     // console.log('Touchdown!');
     isPainting1 = true;
     currentX1 = event.touches[0].clientX - canvas1.offsetLeft;
     currentY1 = event.touches[0].clientY - canvas1.offsetTop;
   });
 
-  canvas.addEventListener("touchend", function (event) {
+  canvas1.addEventListener("touchend", function (event) {
     isPainting1 = false;
   });
 
-  canvas.addEventListener("touchcancel", function (event) {
+  canvas1.addEventListener("touchcancel", function (event) {
     isPainting1 = false;
   });
 
-  canvas.addEventListener("touchmove", function (event) {
+  canvas1.addEventListener("touchmove", function (event) {
     if (isPainting) {
       previousX1 = currentX1;
       currentX1 = event.touches[0].clientX - canvas1.offsetLeft;
@@ -134,27 +134,27 @@ function prepareCanvas3() {
     isPainting3 = false;
   });
 
-  canvas.addEventListener("mouseleave", function (event) {
+  canvas2.addEventListener("mouseleave", function (event) {
     isPainting3 = false;
   });
 
   // Touch Events
-  canvas.addEventListener("touchstart", function (event) {
+  canvas2.addEventListener("touchstart", function (event) {
     // console.log('Touchdown!');
     isPainting3 = true;
     currentX3 = event.touches[0].clientX - canvas3.offsetLeft;
     currentY3 = event.touches[0].clientY - canvas3.offsetTop;
   });
 
-  canvas.addEventListener("touchend", function (event) {
+  canvas2.addEventListener("touchend", function (event) {
     isPainting3 = false;
   });
 
-  canvas.addEventListener("touchcancel", function (event) {
+  canvas2.addEventListener("touchcancel", function (event) {
     isPainting3 = false;
   });
 
-  canvas.addEventListener("touchmove", function (event) {
+  canvas2.addEventListener("touchmove", function (event) {
     if (isPainting) {
       previousX3 = currentX3;
       currentX3 = event.touches[0].clientX - canvas3.offsetLeft;
@@ -204,27 +204,27 @@ function prepareCanvas2() {
     isPainting2 = false;
   });
 
-  canvas.addEventListener("mouseleave", function (event) {
+  canvas3.addEventListener("mouseleave", function (event) {
     isPainting2 = false;
   });
 
   // Touch Events
-  canvas.addEventListener("touchstart", function (event) {
+  canvas3.addEventListener("touchstart", function (event) {
     // console.log('Touchdown!');
     isPainting2 = true;
     currentX2 = event.touches[0].clientX - canvas2.offsetLeft;
     currentY2 = event.touches[0].clientY - canvas2.offsetTop;
   });
 
-  canvas.addEventListener("touchend", function (event) {
+  canvas3.addEventListener("touchend", function (event) {
     isPainting2 = false;
   });
 
-  canvas.addEventListener("touchcancel", function (event) {
+  canvas3.addEventListener("touchcancel", function (event) {
     isPainting2 = false;
   });
 
-  canvas.addEventListener("touchmove", function (event) {
+  canvas3.addEventListener("touchmove", function (event) {
     if (isPainting) {
       previousX2 = currentX2;
       currentX2 = event.touches[0].clientX - canvas2.offsetLeft;
