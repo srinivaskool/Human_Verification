@@ -96,76 +96,6 @@ function prepareCanvas1() {
   });
 }
 
-function prepareCanvas3() {
-  console.log("Preparing Canvas 3");
-  canvas3 = document.getElementById("my-canvas3");
-  context3 = canvas3.getContext("2d");
-
-  context3.fillStyle = BACKGROUND_COLOUR;
-  context3.fillRect(0, 0, canvas3.clientWidth, canvas3.clientHeight);
-
-  context3.strokeStyle = LINE_COLOUR;
-  context3.lineWidth = LINE_WIDTH;
-  context3.lineJoin = "round";
-
-  var isPainting3 = false;
-
-  document.addEventListener("mousedown", function (event) {
-    // console.log('Mouse Pressed!');
-    isPainting3 = true;
-    currentX3 = event.clientX - canvas3.offsetLeft;
-    currentY3 = event.clientY - canvas3.offsetTop;
-  });
-
-  document.addEventListener("mousemove", function (event) {
-    if (isPainting3) {
-      previousX3 = currentX3;
-      currentX3 = event.clientX - canvas3.offsetLeft;
-
-      previousY3 = currentY3;
-      currentY3 = event.clientY - canvas3.offsetTop;
-
-      draw3();
-    }
-  });
-
-  document.addEventListener("mouseup", function (event) {
-    // console.log('Mouse Released');
-    isPainting3 = false;
-  });
-
-  canvas2.addEventListener("mouseleave", function (event) {
-    isPainting3 = false;
-  });
-
-  // Touch Events
-  canvas2.addEventListener("touchstart", function (event) {
-    // console.log('Touchdown!');
-    isPainting3 = true;
-    currentX3 = event.touches[0].clientX - canvas3.offsetLeft;
-    currentY3 = event.touches[0].clientY - canvas3.offsetTop;
-  });
-
-  canvas2.addEventListener("touchend", function (event) {
-    isPainting3 = false;
-  });
-
-  canvas2.addEventListener("touchcancel", function (event) {
-    isPainting3 = false;
-  });
-
-  canvas2.addEventListener("touchmove", function (event) {
-    if (isPainting) {
-      previousX3 = currentX3;
-      currentX3 = event.touches[0].clientX - canvas3.offsetLeft;
-
-      previousY3 = currentY3;
-      currentY3 = event.touches[0].clientY - canvas3.offsetTop;
-      draw3();
-    }
-  });
-}
-
 function prepareCanvas2() {
   console.log("Preparing Canvas 2");
   canvas2 = document.getElementById("my-canvas2");
@@ -204,27 +134,27 @@ function prepareCanvas2() {
     isPainting2 = false;
   });
 
-  canvas3.addEventListener("mouseleave", function (event) {
+  canvas2.addEventListener("mouseleave", function (event) {
     isPainting2 = false;
   });
 
   // Touch Events
-  canvas3.addEventListener("touchstart", function (event) {
+  canvas2.addEventListener("touchstart", function (event) {
     // console.log('Touchdown!');
     isPainting2 = true;
     currentX2 = event.touches[0].clientX - canvas2.offsetLeft;
     currentY2 = event.touches[0].clientY - canvas2.offsetTop;
   });
 
-  canvas3.addEventListener("touchend", function (event) {
+  canvas2.addEventListener("touchend", function (event) {
     isPainting2 = false;
   });
 
-  canvas3.addEventListener("touchcancel", function (event) {
+  canvas2.addEventListener("touchcancel", function (event) {
     isPainting2 = false;
   });
 
-  canvas3.addEventListener("touchmove", function (event) {
+  canvas2.addEventListener("touchmove", function (event) {
     if (isPainting) {
       previousX2 = currentX2;
       currentX2 = event.touches[0].clientX - canvas2.offsetLeft;
@@ -235,6 +165,77 @@ function prepareCanvas2() {
     }
   });
 }
+
+
+function prepareCanvas3() {
+    console.log('Preparing Canvas 3');
+    canvas3 = document.getElementById("my-canvas3");
+    context3 = canvas3.getContext("2d");
+  
+    context3.fillStyle = BACKGROUND_COLOUR;
+    context3.fillRect(0, 0, canvas3.clientWidth, canvas3.clientHeight);
+  
+    context3.strokeStyle = LINE_COLOUR;
+    context3.lineWidth = LINE_WIDTH;
+    context3.lineJoin = "round";
+  
+    var isPainting3 = false;
+  
+    document.addEventListener("mousedown", function (event) {
+      // console.log('Mouse Pressed!');
+      isPainting3 = true;
+      currentX3 = event.clientX - canvas3.offsetLeft;
+      currentY3 = event.clientY - canvas3.offsetTop;
+    });
+  
+    document.addEventListener("mousemove", function (event) {
+      if (isPainting3) {
+        previousX3 = currentX3;
+        currentX3 = event.clientX - canvas3.offsetLeft;
+  
+        previousY3 = currentY3;
+        currentY3 = event.clientY - canvas3.offsetTop;
+  
+        draw3();
+      }
+    });
+  
+    document.addEventListener("mouseup", function (event) {
+      // console.log('Mouse Released');
+      isPainting3 = false;
+    });
+  
+    canvas.addEventListener("mouseleave", function (event) {
+      isPainting3 = false;
+    });
+  
+    // Touch Events
+    canvas.addEventListener("touchstart", function (event) {
+      // console.log('Touchdown!');
+      isPainting3 = true;
+      currentX3 = event.touches[0].clientX - canvas3.offsetLeft;
+      currentY3 = event.touches[0].clientY - canvas3.offsetTop;
+    });
+  
+    canvas.addEventListener("touchend", function (event) {
+      isPainting3 = false;
+    });
+  
+    canvas.addEventListener("touchcancel", function (event) {
+      isPainting3 = false;
+    });
+  
+    canvas.addEventListener("touchmove", function (event) {
+      if (isPainting) {
+        previousX3 = currentX3;
+        currentX3 = event.touches[0].clientX - canvas3.offsetLeft;
+  
+        previousY3 = currentY3;
+        currentY3 = event.touches[0].clientY - canvas3.offsetTop;
+        draw3();
+      }
+    });
+  }
 
 function draw1() {
   context1.beginPath();
